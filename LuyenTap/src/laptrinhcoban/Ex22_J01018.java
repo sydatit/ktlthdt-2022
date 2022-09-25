@@ -2,7 +2,7 @@ package laptrinhcoban;
 
 import java.util.Scanner;
 
-public class Ex21_J01017 {
+public class Ex22_J01018 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int repeat = scanner.nextInt();
