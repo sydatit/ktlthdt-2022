@@ -28,11 +28,17 @@ public class MatHang implements Comparable{
     public int compareTo(Object o) {
         if( o instanceof MatHang ){
             MatHang matHang = (MatHang) o;
-            if( this.loiNhuan > matHang.getLoiNhuan()) return 1;
-            if( this.loiNhuan < matHang.getLoiNhuan()) return -1;
+            if( this.loiNhuan > matHang.getLoiNhuan()) return -1;
+            if( this.loiNhuan < matHang.getLoiNhuan()) return 1;
 
             return  maMatHang.compareTo(matHang.getMaMatHang());
         }
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return maMatHang + " " + tenMatHang + " " + donViTinh + " " +
+                giaMua +  " " + giaBan + " " + loiNhuan;
     }
 }

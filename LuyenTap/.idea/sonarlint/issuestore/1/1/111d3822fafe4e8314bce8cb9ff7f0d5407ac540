@@ -1,0 +1,7 @@
+
+l	java:S127""XRefactor the code in order to not assign to this loop counter from within the loop body.(¨…ÄK
+N	java:S106"9Replace this use of System.out or System.err by a logger.(©îþ±
+W
+java:S3457 "AFormat specifiers should be used instead of string concatenation.(ÔÄ þ
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(ÔÄ þ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
