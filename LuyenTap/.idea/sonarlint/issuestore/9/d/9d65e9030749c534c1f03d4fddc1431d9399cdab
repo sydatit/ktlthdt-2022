@@ -1,0 +1,10 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂùŽð
+X
+java:S1659	"BDeclare "mark2" and all following declarations on a separate line.(™•Œ×
+?
+java:S1068	")Remove this unused "mark1" private field.(™•Œ×
+?
+java:S1068	")Remove this unused "mark2" private field.(™•Œ×
+?
+java:S1068	")Remove this unused "mark3" private field.(™•Œ×
