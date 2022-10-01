@@ -1,2 +1,4 @@
-package com.dat;public class Ex6 {
+package com.dat;
+
+public class Ex6 {
 }

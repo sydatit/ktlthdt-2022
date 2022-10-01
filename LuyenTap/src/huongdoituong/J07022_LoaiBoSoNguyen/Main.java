@@ -27,5 +27,6 @@ public class Main {
         }
         bigIntegers.stream().forEach( bigInteger -> System.out.print(bigInteger + " "));
         hashSetWord.stream().forEach(s -> System.out.printf( s + " "));
+        System.out.println();
     }
 }
