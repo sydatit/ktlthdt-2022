@@ -9,6 +9,8 @@ public class ThiSinh implements Comparable{
     private float diemLy;
     private float diemHoa;
     private String trangThai;
+    private String maKV;
+    private float diemUT;
 
     public ThiSinh(String maThiSinh, String hoTen, String diemToan, String diemLy, String diemHoa) {
         this.maThiSinh = maThiSinh;
@@ -16,16 +18,23 @@ public class ThiSinh implements Comparable{
         this.diemToan = Float.parseFloat(diemToan);
         this.diemLy = Float.parseFloat(diemLy);
         this.diemHoa = Float.parseFloat(diemHoa);
+        this.maKV = maThiSinh.substring(0, 3);
+
+        if( maKV.equals("KV1")){
+            diemUT = 0.5f;
+        }else if( maKV.equals("KV2")){
+            diemUT = 1.0f;
+        }else {
+            diemUT = 2.5f;
+        }
     }
     public void setTrangThai(String trangThai) {
         this.trangThai = trangThai;
     }
     public float getTongDiem(){
-        return diemToan * 2 + diemLy + diemHoa + getDiemUuTien() ;
+        return diemToan * 2 + diemLy + diemHoa + diemUT ;
     }
-    public String getMaKhuVuc(){
-        return maThiSinh.substring(0, 3);
-    }
+
     private String chuanHoaHoTen( String hoTen){
         StringBuilder stringBuilder = new StringBuilder();
         StringTokenizer tokenizer = new StringTokenizer(hoTen);
@@ -39,23 +48,15 @@ public class ThiSinh implements Comparable{
         }
         return stringBuilder.toString().trim();
     }
-    private float getDiemUuTien(){
-        String maKhuVuc = getMaKhuVuc();
-        float diemCong = 0;
-        if( maKhuVuc.equals("KV1")){
-            diemCong = 0.5f;
-        }else if( maKhuVuc.equals("KV2")){
-            diemCong = 1.0f;
-        }else {
-            diemCong = 2.5f;
-        }
-        return diemCong;
-    }
 
     @Override
     public String toString() {
-        return maThiSinh + " " + hoTen + " " + getDiemUuTien() +
-                " " + getTongDiem() + " " + trangThai;
+        String diemUTStr = ((diemUT -(int) diemUT) != 0? ( "" + diemUT) : ( "" + (int) diemUT));
+        float tongDiem = getTongDiem();
+        String tongDiemStr = ((tongDiem -(int) tongDiem) != 0? ( "" + tongDiem) : ( "" + (int) tongDiem));
+
+        return maThiSinh + " " + hoTen + " " + diemUTStr +
+                " " + tongDiemStr + " " + trangThai;
     }
 
     @Override

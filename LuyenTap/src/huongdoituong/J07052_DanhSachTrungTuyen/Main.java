@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(new File("src/huongdoituong/J07052_DanhSachTrungTuyen/THISINH.in"));
+        Scanner scanner = new Scanner(new File("THISINH.in"));
         int soThiSinh = scanner.nextInt();
         scanner.nextLine();
         ArrayList<ThiSinh> thiSinhList = new ArrayList<>();
@@ -21,8 +21,12 @@ public class Main {
         float diemChuan = 0;
         if( soChiTieu < 1){
             Collections.sort(thiSinhList);
-            System.out.println(String.format("%.1f", 0));
-            thiSinhList.forEach(System.out::println);
+            System.out.println(String.format("%.1f", 0f));
+            thiSinhList.stream()
+                    .forEach(thiSinh -> {
+                        thiSinh.setTrangThai("TRUOT");
+                        System.out.println(thiSinh);
+                    });
         }else {
             Collections.sort(thiSinhList);
             for (int i = 0; i < thiSinhList.size(); i++) {
@@ -37,7 +41,6 @@ public class Main {
                     }
                     if( soChiTieu == 0) diemChuan = thiSinh.getTongDiem();
                 } else thiSinh.setTrangThai("TRUOT");
-
             }
 
             System.out.println(String.format("%.1f", diemChuan));
