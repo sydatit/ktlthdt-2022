@@ -55,16 +55,10 @@ f
 6src/huongdoituong/J04013_BaiToanTuyenSinh/ThiSinh.java,c\5\c5455b777d0fedabe3f81ac4f4b4e1aefc767b6d
 c
 3src/huongdoituong/J04013_BaiToanTuyenSinh/Main.java,5\7\579ec1b0eb10607316e56a22cde32e0c60a2d35d
-h
-8src/huongdoituong/J07052_DanhSachTrungTuyen/ThiSinh.java,5\7\57a3581751d56f1a35c75e9221e944f2315697ed
-e
-5src/huongdoituong/J07052_DanhSachTrungTuyen/Main.java,d\3\d3ee5b30d9dda99922a814cf1bbe867e496f8b2e
 [
 +src/huongdoituong/J04002_TinhTong/Main.java,6\c\6c3d31d1b618e9b439f29659538a3ed96af730df
 Y
 )src/huongdoituong/J04002_TinhTong/DATA.in,0\b\0b2d2f27e947a47b726b536786172f89d5499bdd
-f
-6src/huongdoituong/J07052_DanhSachTrungTuyen/THISINH.in,a\2\a24c7ea65ba570350dd937b4e801bb348ccd6fff
 ]
 -src/huongdoituong/J07053_XetTuyen/XETTUYEN.in,9\7\97d6d04403082ad653bd2c91b1e6c7a69ebdd452
 ^
