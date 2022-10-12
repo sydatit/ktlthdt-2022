@@ -1,0 +1,12 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ëûÇÉ
+V
+java:S1854";Remove this useless assignment to local variable "maxtrix".(û™ÚÌùÿÿÿÿ
+P
+java:S1854"5Remove this useless assignment to local variable "n".(½ôäÒÿÿÿÿÿ
+A
+java:S1481"&Remove this unused "n" local variable.(½ôäÒÿÿÿÿÿ
+G
+java:S1481",Remove this unused "maxtrix" local variable.(û™ÚÌùÿÿÿÿ
+F
+java:S1144"0Remove this unused private "multiMatrix" method.( ´çø

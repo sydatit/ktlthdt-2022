@@ -1,0 +1,8 @@
+
+`
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(æĞ­úÿÿÿÿ
+f
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(çäı
+S	java:S106"9Replace this use of System.out or System.err by a logger.(£ˆ†İúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(×•œ²
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
