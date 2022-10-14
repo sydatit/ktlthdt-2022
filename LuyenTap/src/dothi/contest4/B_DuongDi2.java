@@ -2,9 +2,9 @@ package dothi.contest4;
 
 import java.util.*;
 
-public class A_DuongDi1 {
+public class B_DuongDi2 {
 
-    static ArrayList<Integer> dske[];
+    static Queue<Integer> dske[];
     static boolean chuaxet[];
     static int truoc[];
     public static void main(String[] args) {
@@ -12,35 +12,38 @@ public class A_DuongDi1 {
         int t = in.nextInt();
         while(t-->0){
             int n = in.nextInt(), m = in.nextInt();
-            int s = in.nextInt(), x = in.nextInt();
-            dske = new ArrayList[n + 5];
+            int s = in.nextInt();
+            dske = new PriorityQueue[n + 5];
             chuaxet = new boolean[n + 5];
             truoc = new int[n + 5];
-            for(int i=0;i<=n;i++){
-                dske[i] = new ArrayList<>();
+            for(int i=0;i<= n ;i++){
+                dske[i] = new PriorityQueue<>();
                 chuaxet[i] = true;
             }
             for(int i=1;i<=m;i++){
                 int u = in.nextInt(), v = in.nextInt();
                 dske[u].add(v);
+                dske[v].add(u);
             }
-            dfs(s, x);
-            if( truoc[x] != 0){
-                Stack<Integer> stack = new Stack<>();
-                int dinhTr = x;
-                stack.push(dinhTr);
-                while (dinhTr != s){
-                    dinhTr = truoc[dinhTr];
+            dfs(s);
+            for (int i = 2; i <= n; i++) {
+                if( truoc[i] != 0){
+                    Stack<Integer> stack = new Stack<>();
+                    int dinhTr = i;
                     stack.push(dinhTr);
-                }
-                while (!stack.isEmpty()){
-                    System.out.print(stack.pop() + " ");
-                }
-                System.out.println();
-            }else System.out.println("-1");
+                    while (dinhTr != s){
+                        dinhTr = truoc[dinhTr];
+                        stack.push(dinhTr);
+                    }
+                    while (!stack.isEmpty()){
+                        System.out.print(stack.pop() + " ");
+                    }
+                    System.out.println();
+                }else System.out.println("No path");
+            }
         }
     }
-    public static void dfs(int u, int x){
+    public static void dfs(int u){
         Queue<Integer> queue = new LinkedList<>();
         queue.add(u); chuaxet[u] = false;
         while (!queue.isEmpty()) {

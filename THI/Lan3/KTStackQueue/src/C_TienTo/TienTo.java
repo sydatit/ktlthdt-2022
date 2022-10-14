@@ -1,26 +1,17 @@
-package B_HauTo;
+package C_TienTo;
 
 import java.util.Scanner;
 import java.util.Stack;
 
-public class HauTo {
+public class TienTo {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int repeat = scanner.nextInt();
-        while ( repeat --> 0){
-            int size = scanner.nextInt();
-            String[] array = new String[size];
-            for (int i = 0; i < size; i++) {
-                array[i] = scanner.next();
-            }
-            System.out.println(solve( array, size));
-        }
+
     }
 
     private static long solve(String[] array, int size) {
 
         Stack<Long> stack = new Stack<>();
-        for (int i = 0; i < size; i++) {
+        for (int i =size -1; i >= 0; i--) {
             if( array[i].equals("+") || array[i].equals("-") ||array[i].equals("*") ||array[i].equals("/") ){
                 Long firstNum = stack.pop();
                 Long secondNum = stack.pop();
@@ -35,17 +26,17 @@ public class HauTo {
         char operator = s.charAt(0);
         switch (operator){
             case '+':
-                return secondNum + firstNum;
+                return firstNum + secondNum;
             case '-':
-                return secondNum - firstNum;
+                return firstNum - secondNum;
             case '*':
-                return secondNum * firstNum;
+                return firstNum * secondNum;
             case '/':
-                return secondNum / firstNum;
+                return firstNum / secondNum;
             case '^':
-                return secondNum ^ firstNum;
+                return firstNum ^ secondNum;
             case '%':
-                return secondNum % firstNum;
+                return firstNum % secondNum;
         }
         return 0L;
     }
