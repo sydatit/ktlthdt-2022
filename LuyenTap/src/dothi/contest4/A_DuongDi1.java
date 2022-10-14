@@ -28,27 +28,10 @@ public class A_DuongDi1 {
                 dske[u].add(v);
             }
             dfs(s, x);
-            if( truoc[x] ){
-
-                System.out.println();
-            }else System.out.println("-1");
         }
     }
     public static void dfs(int u, int x){
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(u); chuaxet[u] = false;
-        while (!queue.isEmpty()) {
-            Integer dinhDuyet = queue.poll();
-            kq.add(dinhDuyet);
-            if( dinhDuyet == x)
-                break;
-            for (Integer item :dske[dinhDuyet]) {
-                if( chuaxet[item]){
-                    chuaxet[item] = false;
-                    queue.add(item);
-                }
-            }
-        }
+
     }
 }
 /*
