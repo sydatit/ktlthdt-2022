@@ -17,31 +17,21 @@ public class T212_KiemTraBieuThucSoHoc {
 
     private static boolean testValid(String expression) {
         Stack<Character> stack = new Stack<>();
-        HashSet<Character> operator = new HashSet<>();
-        operator.add('+');
-        operator.add('-');
-        operator.add('*');
-        operator.add('/');
         for (int i = 0; i < expression.length(); i++) {
-            char charCurrent = expression.charAt(i);
-            if( stack.isEmpty()){
-                stack.push(charCurrent);
-            }else {
-                char headStack = stack.peek();
-                if( charCurrent == '('){
-                    stack.push(charCurrent);
-                } else if (operator.contains(charCurrent)) {
-                    if( !operator.contains(headStack)){
-                        stack.push(charCurrent);
+            char charI = expression.charAt(i);
+            if( charI == ')'){
+                boolean testOk = false;
+                char headStack = stack.pop();
+                while ( headStack != '('){
+
+                    if( headStack == '+' || headStack == '-'|| headStack == '*'|| headStack == '/'){
+                        testOk = true;
                     }
-                } else if ( charCurrent == ')') {
-                    if( operator.contains(headStack)){
-                        while (stack.peek() != '(') stack.pop();
-                        stack.pop();
-                    }
+                    headStack = stack.pop();
                 }
-            }
+                if( !testOk) return false;
+            }else stack.push(charI);
         }
-        return stack.isEmpty();
+        return true;
     }
 }

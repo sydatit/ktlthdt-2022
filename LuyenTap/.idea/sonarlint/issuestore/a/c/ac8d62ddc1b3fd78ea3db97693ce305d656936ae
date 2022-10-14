@@ -1,0 +1,9 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ášÿ
+6
+java:S2326"U is not used in the class.(øÅ¡’üÿÿÿÿ
+6
+java:S2326"T is not used in the class.(øÅ¡’üÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(ÌÈ
+\
+java:S1126"AReplace this if-then-else statement by a single return statement.(ôå½Èıÿÿÿÿ

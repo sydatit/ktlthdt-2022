@@ -1,0 +1,10 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³ÓÂ†
+h	java:S116	"NRename this field "a_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Íêèıÿÿÿÿ
+c	java:S116
+"NRename this field "b_c" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…©ˆÏ
+c	java:S116"NRename this field "a_b" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(á¤»æ
+\
+java:S1126"AReplace this if-then-else statement by a single return statement.(ÏÊ‰™úÿÿÿÿ
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8ê˜öœ¹0

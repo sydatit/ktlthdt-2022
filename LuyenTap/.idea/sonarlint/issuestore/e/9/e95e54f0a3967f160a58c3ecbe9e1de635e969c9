@@ -1,0 +1,8 @@
+
+k
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(û›şöıÿÿÿÿ
+N	java:S106
+"9Replace this use of System.out or System.err by a logger.(ı§˜Ğ
+5
+java:S1659"Declare "b" on a separate line.(Úï—
+7	java:S131""Add a default case to this switch.(“œ®µ

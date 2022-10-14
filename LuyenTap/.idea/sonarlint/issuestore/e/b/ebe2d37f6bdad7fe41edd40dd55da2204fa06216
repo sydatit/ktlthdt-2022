@@ -1,0 +1,12 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÖÃŒ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äçÃ
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ªßÓƒşÿÿÿÿ8ÈªŒÓ·0
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ªßÓƒşÿÿÿÿ
+G
+java:S3457 "%String contains no format specifiers.(¹—¿‰şÿÿÿÿ8¼è‹Ó·0
+Z	java:S106 "9Replace this use of System.out or System.err by a logger.(¹—¿‰şÿÿÿÿ8½è‹Ó·0
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ

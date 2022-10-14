@@ -28,10 +28,34 @@ public class A_DuongDi1 {
                 dske[u].add(v);
             }
             dfs(s, x);
+            if( truoc[x] != 0){
+                Stack<Integer> stack = new Stack<>();
+                int dinhTr = x;
+                stack.push(dinhTr);
+                while (dinhTr != s){
+                    dinhTr = truoc[dinhTr];
+                    stack.push(dinhTr);
+                }
+                while (!stack.isEmpty()){
+                    System.out.print(stack.pop() + " ");
+                }
+                System.out.println();
+            }else System.out.println("-1");
         }
     }
     public static void dfs(int u, int x){
-
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(u); chuaxet[u] = false;
+        while (!queue.isEmpty()) {
+            Integer dinhDuyet = queue.poll();
+            for (Integer item :dske[dinhDuyet]) {
+                if( chuaxet[item]){
+                    chuaxet[item] = false;
+                    queue.add(item);
+                    truoc[item] = dinhDuyet;
+                }
+            }
+        }
     }
 }
 /*
