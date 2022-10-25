@@ -29,13 +29,14 @@ public class ThiSinh {
 
         if( this.diemLT >= 8 && this.diemTH >= 8){
             diemThuong = 1;
+        }else if( this.diemLT >= 8 && this.diemTH >= 8){
+            diemThuong = 0.5f;
         }
-        diemThuong += this.diemLT >= 7.5f && this.diemTH >= 7.5f ? 0.5f : 0;
-        float tongDiem = this.diemLT + this.diemTH + diemThuong;
-        tongDiem = tongDiem > 20 ? 20 : tongDiem;
 
-//        System.out.println("" + (this.diemLT + this.diemTH + diemThuong));
-        diemTB = Math.round( tongDiem /2f);
+        float tongDiem = Math.round(( this.diemLT + this.diemTH)/2f) + diemThuong;
+        tongDiem = tongDiem > 10 ? 10 : tongDiem;
+
+        diemTB = (int) tongDiem;
 
         tinhXepLoai();
 
@@ -48,12 +49,15 @@ public class ThiSinh {
                 xepLoai = "Trung binh";
                 break;
             case 7:
-                xepLoai = "Kha"; break;
+                xepLoai = "Kha";
+                break;
             case 8:
-                xepLoai = "Gioi"; break;
+                xepLoai = "Gioi";
+                break;
             case 9:
             case 10:
-                xepLoai = "Xuat sac"; break;
+                xepLoai = "Xuat sac";
+                break;
             default:
                 xepLoai = "Truot";
         }

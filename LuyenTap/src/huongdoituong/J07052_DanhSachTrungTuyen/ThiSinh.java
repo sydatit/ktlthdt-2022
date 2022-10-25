@@ -51,9 +51,9 @@ public class ThiSinh implements Comparable{
 
     @Override
     public String toString() {
-        String diemUTStr = ((diemUT -(int) diemUT) != 0? ( "" + diemUT) : ( "" + (int) diemUT));
+        String diemUTStr = ((diemUT - (int) diemUT)!= 0 ? Float.toString(diemUT) : Integer.toString((int) diemUT));
         float tongDiem = getTongDiem();
-        String tongDiemStr = ((tongDiem -(int) tongDiem) != 0? ( "" + tongDiem) : ( "" + (int) tongDiem));
+        String tongDiemStr= ((tongDiem - (int)tongDiem)!= 0 ? Float.toString(tongDiem) : Integer.toString((int) tongDiem));
 
         return maThiSinh + " " + hoTen + " " + diemUTStr +
                 " " + tongDiemStr + " " + trangThai;
@@ -61,13 +61,10 @@ public class ThiSinh implements Comparable{
 
     @Override
     public int compareTo(Object o) {
-        if( o instanceof ThiSinh){
-            ThiSinh thiSinh = (ThiSinh) o;
-            if( getTongDiem() < thiSinh.getTongDiem()) return 1;
-            if( getTongDiem() > thiSinh.getTongDiem()) return -1;
+        ThiSinh thiSinh = (ThiSinh) o;
+        if( getTongDiem() < thiSinh.getTongDiem()) return 1;
+        if( getTongDiem() > thiSinh.getTongDiem()) return -1;
 
-            return maThiSinh.compareTo(thiSinh.maThiSinh);
-        }
-        return 1;
+        return maThiSinh.compareTo(thiSinh.maThiSinh);
     }
 }

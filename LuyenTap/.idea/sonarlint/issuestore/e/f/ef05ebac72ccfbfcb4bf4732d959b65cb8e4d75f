@@ -1,5 +1,6 @@
 
 n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ø¾
-V	java:S125%"<This block of commented-out lines of code should be removed.(şË–Ãıÿÿÿÿ
+›
+java:S1862 "„This branch can not be reached because the condition duplicates a previous condition in the same sequence of "if/else if" statements(ä£›€
 H
 java:S1068"-Remove this unused "formatter" private field.(ØÚ¯Àşÿÿÿÿ

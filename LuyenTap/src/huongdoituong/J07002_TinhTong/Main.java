@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("VANBAN.in"));
-        int sum = 0;
+        Scanner scanner = new Scanner(new File("DATA.in"));
+        long sum = 0;
         while (scanner.hasNext()){
             String token = scanner.next();
             try{
