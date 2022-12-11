@@ -37,7 +37,6 @@ public class DragonBall {
                 queue.add(i);
             }
         }
-        // duyet BFS
         traverseBFS(queue, q);
         // lay ket qua
         for (int i = 1; i <= k; i++) {
@@ -52,8 +51,8 @@ public class DragonBall {
 
     private static void traverseBFS(Queue<Integer> queue, int q) {
         while (!queue.isEmpty()){
-            Integer child = queue.poll();
-            Integer dad = relationships.get(child);
+            int child = queue.poll();
+            int dad = relationships.get(child);
 
             HashSet<Integer> childSet = cities.get(child).getDragonBalls();
             HashSet<Integer> dadSet = cities.get(dad).getDragonBalls();
@@ -66,9 +65,9 @@ public class DragonBall {
             if( dad != 1 && childs.size() == dske[dad].size()){
                 queue.add(dad);
             }
-            System.out.println("dad: " + dad + ", dadSet: " + dadSet + " -------- child:" + child + ", childSet: "
-            + childSet);
-            System.out.println("dad: " + cities.get(dad).getDragonBalls().size() + ", child: " + cities.get(child).getDragonBalls().size());
+//            System.out.println("dad: " + dad + ", dadSet: " + dadSet + " -------- child:" + child + ", childSet: "
+//            + childSet);
+//            System.out.println("dad: " + cities.get(dad).getDragonBalls().size() + ", child: " + cities.get(child).getDragonBalls().size());
         }
     }
 }
