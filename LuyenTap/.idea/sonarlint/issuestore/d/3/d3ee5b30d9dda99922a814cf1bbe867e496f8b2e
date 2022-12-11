@@ -1,15 +1,10 @@
 
 o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿ËŒ—
-`
-java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(œ–Êşÿÿÿÿ
-h
-java:S3776
-"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(œû¿Ø
-N	java:S106"9Replace this use of System.out or System.err by a logger.(£…š§
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(¹’çÒıÿÿÿÿ8º°ç¹0
-S	java:S106."9Replace this use of System.out or System.err by a logger.(¶ÏÖšüÿÿÿÿ
-U	java:S106/"9Replace this use of System.out or System.err by a logger.(Ç¯É8„Æè¹0
-U
-java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ
-S
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ
+[
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ıÙıÀ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(£…š§
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¹’çÒıÿÿÿÿ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(¶ÏÖšüÿÿÿÿ
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(Ç¯É
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8£Ò–ˆ¾0
