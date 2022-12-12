@@ -1,0 +1,23 @@
+
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ë¡±À
+p
+java:S1450"URemove the "soDinh" field and declare it as a local variable in the relevant methods.(ÒºÆÊüÿÿÿÿ
+E
+java:S1197	"*Move the array designators [] to the type.(®ëÕùıÿÿÿÿ
+@
+java:S1197
+"*Move the array designators [] to the type.(ĞíÛ¦
+5
+java:S1659"Declare "v" on a separate line.( ò—æ
+W
+java:S3457"AFormat specifiers should be used instead of string concatenation.(Ùî²©
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ùî²©
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ÆçÅ½
+M	java:S106)"9Replace this use of System.out or System.err by a logger.(˜¯‹h
+M
+java:S1128"1Remove this unused import 'java.util.LinkedList'.(»Äğ18ƒâ´½0
+I
+java:S1128",Remove this unused import 'java.util.Queue'.(Äá™ô8„â´½0
+B
+java:S1144/",Remove this unused private "ketThuc" method.(ÑÚ³ë
