@@ -1,9 +1,6 @@
 package dothi.contest4;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 public class A_DuongDi1 {
 

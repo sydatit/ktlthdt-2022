@@ -147,8 +147,6 @@ X
 (src/dothi/DSA09004_DFS_DoThiVoHuong.java,6\6\66be36d90a1a46638429791b955a1e8437088e08
 X
 (src/dothi/DSA09005_BFS_DoThiVoHuong.java,8\c\8c5a4251acc8c430ba201f3ec1b06a2031e9dbb8
-R
-"src/dothi/contest4/A_DuongDi1.java,6\6\667e3cabc7225b2cff32edd4dbd027df9dd117fa
 Z
 *src/dothi/TN05001_DFSTrenDoThiVoHuong.java,c\1\c1803d72665ef49e43817eae7fb2524fd10cb7e3
 R
@@ -207,3 +205,7 @@ i
 9src/huongdoituong/J05003_DanhSachDoiTuongSV/SinhVien.java,b\2\b2dc8f5896eade1217833ac2e01e4e8d094c2575
 a
 1src/huongdoituong/J07059_DanhSachCaThi/CaThi.java,8\9\899dae5ee870851e004dd91743ab9f601036f324
+R
+"src/dothi/contest4/A_DuongDi1.java,6\6\667e3cabc7225b2cff32edd4dbd027df9dd117fa
+L
+src/ncc/contest/Student.java,a\f\af099cf14e38e3adbc06f23f6c1f6b9be808fa39
