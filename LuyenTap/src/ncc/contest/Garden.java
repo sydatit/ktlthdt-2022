@@ -9,19 +9,21 @@ public class Garden {
         int a = scanner.nextInt();
         int b = scanner.nextInt();
         int[][] matrix = new int[a + 1][ b + 1];
+        int[][] row = new int[a + 1][ b + 1];
+        int[][] column = new int[a + 1][ b + 1];
         for (int i = 1; i <= a; i++) {
             for (int j = 1; j <= b; j++) {
                 matrix[i][j] = scanner.nextInt();
+                row[i][j] = row[i][j - 1] + matrix[i][j];
+                column[i][j] = column[i - 1][j] + matrix[i][j];
             }
         }
-        System.out.println(maxPerimeter(a, b, matrix));
+        System.out.println(maxPerimeter(a, b, matrix, row, column));
     }
 
-    private static int maxPerimeter(int a, int b, int[][] matrix) {
+    private static int maxPerimeter(int a, int b, int[][] matrix, int[][] row, int[][] column) {
         int maxSumP = Integer.MIN_VALUE;
-        int[][] row = new int[a + 1][ b + 1];
-        int[][] column = new int[a + 1][ b + 1];
-        preCalculate(a, b, matrix, row, column);
+//        preCalculate(a, b, matrix, row, column);
         for (int i = 1; i <= a; i++) {
             for (int j = 1; j <= b; j++) {
                 int maxHeight = a - i;
@@ -47,20 +49,22 @@ public class Garden {
         int sum = upperEdge + bottomEdge + leftEdge + rightEdge;
         sum = sum - matrix[i][j] - matrix[i][j + weight] - matrix[i + height][j] - matrix[i + height][j + weight];
         return sum;
+
+
     }
 
-    private static void preCalculate(int a, int b, int[][] matrix, int[][] row, int[][] column) {
-        for (int i = 1; i <= a; i++) {
-            for (int j = 1; j <= b ; j++) {
-                row[i][j] = row[i][j - 1] + matrix[i][j];
-            }
-        }
-        for (int i = 1; i <= b; i++) {
-            for (int j = 1; j <= a ; j++) {
-                column[j][i] = column[j - 1][i] + matrix[j][i];
-            }
-        }
-    }
+//    private static void preCalculate(int a, int b, int[][] matrix, int[][] row, int[][] column) {
+//        for (int i = 1; i <= a; i++) {
+//            for (int j = 1; j <= b ; j++) {
+//                row[i][j] = row[i][j - 1] + matrix[i][j];
+//            }
+//        }
+//        for (int i = 1; i <= b; i++) {
+//            for (int j = 1; j <= a ; j++) {
+//                column[j][i] = column[j - 1][i] + matrix[j][i];
+//            }
+//        }
+//    }
 }
 /*
 3 3

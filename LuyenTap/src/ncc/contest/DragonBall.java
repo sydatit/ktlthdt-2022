@@ -26,10 +26,15 @@ public class DragonBall {
             cities.add(new City(new HashSet<>(), set));
         }
         for (int i = 0; i < k - 1; i++) {
-            int dad = scanner.nextInt();
-            int child = scanner.nextInt();
-            dske[dad].add(child);
-            relationships.put(child, dad);
+            int first = scanner.nextInt();
+            int second = scanner.nextInt();
+            if( first < second){
+                dske[first].add(second);
+                relationships.put(second, first);
+            }else {
+                dske[second].add(first);
+                relationships.put(first, second);
+            }
         }
         Queue<Integer> queue = new LinkedList<>();
         for (int i = 2; i <= k; i++) {
@@ -51,19 +56,23 @@ public class DragonBall {
 
     private static void traverseBFS(Queue<Integer> queue, int q) {
         while (!queue.isEmpty()){
-            int child = queue.poll();
-            int dad = relationships.get(child);
+            try {
+                int child = queue.poll();
+                int dad = relationships.get(child);
 
-            HashSet<Integer> childSet = cities.get(child).getDragonBalls();
-            HashSet<Integer> dadSet = cities.get(dad).getDragonBalls();
-            HashSet<Integer> childs = cities.get(dad).getChildCitys();
-            childs.add(child);
-            dadSet.addAll(childSet);
-            if( dadSet.size() == q){
-                isEnough[dad] = true;
-            }
-            if( dad != 1 && childs.size() == dske[dad].size()){
-                queue.add(dad);
+                HashSet<Integer> childSet = cities.get(child).getDragonBalls();
+                HashSet<Integer> dadSet = cities.get(dad).getDragonBalls();
+                HashSet<Integer> childs = cities.get(dad).getChildCitys();
+                childs.add(child);
+                dadSet.addAll(childSet);
+                if( dadSet.size() == q){
+                    isEnough[dad] = true;
+                }
+                if( dad != 1 && childs.size() == dske[dad].size()){
+                    queue.add(dad);
+                }
+            }catch (Exception e){
+                e.printStackTrace();
             }
 //            System.out.println("dad: " + dad + ", dadSet: " + dadSet + " -------- child:" + child + ", childSet: "
 //            + childSet);
