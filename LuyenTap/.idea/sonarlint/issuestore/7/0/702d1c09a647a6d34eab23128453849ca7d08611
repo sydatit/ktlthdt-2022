@@ -1,0 +1,19 @@
+
+‚
+java:S1319^"gThe type of "childCitys" should be an interface such as "Set" rather than the implementation "HashSet".(ÑĞÙèúÿÿÿÿ
+ƒ
+java:S1319^"hThe type of "dragonBalls" should be an interface such as "Set" rather than the implementation "HashSet".(ÑĞÙèúÿÿÿÿ
+‚
+java:S1319c"mThe return type of this method should be an interface such as "Set" rather than the implementation "HashSet".(±±E
+‚
+java:S1319g"gThe type of "childCitys" should be an interface such as "Set" rather than the implementation "HashSet".(àé£çıÿÿÿÿ
+ˆ
+java:S1319k"mThe return type of this method should be an interface such as "Set" rather than the implementation "HashSet".(Ù‘¤üÿÿÿÿ
+ƒ
+java:S1319o"hThe type of "dragonBalls" should be an interface such as "Set" rather than the implementation "HashSet".(ÃÓµƒùÿÿÿÿ
+@
+java:S1197"*Move the array designators [] to the type.(í·Ÿª
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(ùàèü8å¶™¸Ğ0
+U	java:S1069"9Replace this use of System.out or System.err by a logger.(°Àä8Âš¸Ğ0
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ãš¸Ğ0
+X	java:S125R"<This block of commented-out lines of code should be removed.(¼Ë•œ8í¶™¸Ğ0

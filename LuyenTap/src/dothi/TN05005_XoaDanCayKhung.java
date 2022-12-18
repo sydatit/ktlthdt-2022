@@ -1,13 +1,12 @@
 package dothi;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 public class TN05005_XoaDanCayKhung {
     static ArrayList<Integer> dske[];
     static boolean[] chuaxet;
+    static boolean[] isDeleted;
+    static int result;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -17,9 +16,12 @@ public class TN05005_XoaDanCayKhung {
             int M = scanner.nextInt();
             dske = new ArrayList[ amountPoint + 1];
             chuaxet = new boolean[ amountPoint + 1];
+            isDeleted = new boolean[ amountPoint + 1];
+            result = amountPoint;
             for (int i = 1; i <= amountPoint ; i++) {
                 dske[i] = new ArrayList<>();
                 chuaxet[i] = true;
+                isDeleted[i] = false;
             }
             for (int i = 0; i < amountPoint - 1; i++) {
                 int headP = scanner.nextInt();
@@ -28,7 +30,7 @@ public class TN05005_XoaDanCayKhung {
                 dske[lastP].add(headP);
             }
             algorithmBFS(amountPoint, M);
-
+            System.out.println(result);
         }
     }
 
@@ -40,8 +42,20 @@ public class TN05005_XoaDanCayKhung {
                 chuaxet[i] = false;
             }
         }
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty() && m --> 0){
+            int leaf = queue.size();
+            for (int i = 0; i < leaf; i++) {
+                int head = queue.poll();
+                isDeleted[head] = true;
+                result--;
+                for (Integer item :dske[head]) {
+                    if(chuaxet[item]){
+                        chuaxet[item] = false;
+                        queue.add(item);
+                    }
+                }
 
+            }
         }
     }
 

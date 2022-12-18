@@ -31,6 +31,7 @@ public class NhanVien implements Comparable{
         NhanVien nhanVien = (NhanVien) o;
         if( tuoi > nhanVien.tuoi) return -1;
         if( tuoi < nhanVien.tuoi) return 1;
+        ngaySinh.isAfter(nhanVien.ngaySinh);
         return 0;
     }
 

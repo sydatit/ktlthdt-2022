@@ -1,0 +1,6 @@
+
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öäÂ–ÿÿÿÿÿ
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Õ÷ì‡
+@
+java:S1197"*Move the array designators [] to the type.(í·Ÿª
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(®ýáëûÿÿÿÿ

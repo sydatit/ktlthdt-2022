@@ -1,0 +1,8 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(Ü¢«Ñ
+2
+java:S1643"Use a StringBuilder instead.(Íõúë
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á‘·…
+o
+java:S1210@"YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(á’‘œ

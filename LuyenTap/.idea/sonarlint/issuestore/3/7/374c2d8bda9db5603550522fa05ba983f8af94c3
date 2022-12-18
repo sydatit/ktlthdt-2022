@@ -1,0 +1,9 @@
+
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(à¾Š‰þÿÿÿÿ
+E
+java:S1197	"*Move the array designators [] to the type.(®ëÕùýÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(ïŸÉðúÿÿÿÿ
+Z	java:S106-"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ8¢æô¤Ñ0
+Z	java:S106."9Replace this use of System.out or System.err by a logger.(ÝÛèÃþÿÿÿÿ8íŒõ¤Ñ0
