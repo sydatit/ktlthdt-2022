@@ -50,7 +50,6 @@ public class Garden {
         sum = sum - matrix[i][j] - matrix[i][j + weight] - matrix[i + height][j] - matrix[i + height][j + weight];
         return sum;
 
-
     }
 
 //    private static void preCalculate(int a, int b, int[][] matrix, int[][] row, int[][] column) {

@@ -227,10 +227,6 @@ Z
 *src/dothi/TN05002_BFS_DoThiVoHuong_L2.java,b\f\bff964ed7c18297e8155df04d5ce94a2132922b2
 Z
 *src/dothi/TN05002_BFSTrenDoThiVoHuong.java,8\c\8ca5dd327ce3e7ab3c0c76f33ea5a6f45c417b7d
-K
-src/ncc/contest/Garden.java,d\3\d369f24423f825beaaf7e3cbf809aba586b6787e
-O
-src/ncc/contest/DragonBall.java,7\0\702d1c09a647a6d34eab23128453849ca7d08611
 U
 %src/dothi/TN05005_XoaDanCayKhung.java,7\7\7725129165b5f6be07aa44d2c7069578ea767f2f
 p
