@@ -267,3 +267,13 @@ X
 (src/nganxep/T215_BienDoiTienToHauTo.java,6\4\64a3468897ebcc36592a1851053e5c85c1c72763
 F
 src/dequy/BaiThi1.java,7\8\783f222872ec465192d5bf7ef670a72e3ef27777
+O
+src/ncc/contest/DragonBall.java,7\0\702d1c09a647a6d34eab23128453849ca7d08611
+K
+src/ncc/contest/Garden.java,d\3\d369f24423f825beaaf7e3cbf809aba586b6787e
+Z
+*src/codelearn/io/BestTimeToBuyAndSell.java,c\9\c9ffa597ee689f7379baa7ac290c9f3e4c56902f
+N
+src/codelearn/io/TestMail.java,6\7\67d64aa272afc21da0b221ec6fd09cfceb12bc60
+g
+7src/codelearn/io/MaximumBagsWithFullCapacityORocks.java,a\9\a9416b2656e47ac039782764adef0b78955b68e2

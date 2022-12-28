@@ -37,7 +37,15 @@ public class MaximumBagsWithFullCapacityORocks {
         while (additionalRocks >= 0 && !priorityQ.isEmpty()){
             int head = priorityQ.poll();
             if( additionalRocks >= head )
+                result++;
+            additionalRocks -= head;
         }
         return result;
     }
 }
+/*
+5
+2 3 4 5
+1 2 4 4
+2
+ */
