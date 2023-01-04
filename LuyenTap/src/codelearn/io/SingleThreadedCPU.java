@@ -23,9 +23,9 @@ public class SingleThreadedCPU {
         int n = tasks.length;
         int[] result = new int[n];
         List<Task> taskList = new ArrayList<>();
-        PriorityQueue<Task> queue = new PriorityQueue<>(( a, b) -> {
-
-        })
+//        PriorityQueue<Task> queue = new PriorityQueue<>(( a, b) -> {
+//
+//        })
         for (int i = 0; i < n; i++) {
             Task task = new Task(i, tasks[i][0], tasks[i][1]);
             taskList.add(task);

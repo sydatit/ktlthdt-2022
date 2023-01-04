@@ -275,3 +275,5 @@ Z
 *src/codelearn/io/BestTimeToBuyAndSell.java,c\9\c9ffa597ee689f7379baa7ac290c9f3e4c56902f
 N
 src/codelearn/io/TestMail.java,6\7\67d64aa272afc21da0b221ec6fd09cfceb12bc60
+g
+7src/codelearn/io/MaximumBagsWithFullCapacityORocks.java,a\9\a9416b2656e47ac039782764adef0b78955b68e2
