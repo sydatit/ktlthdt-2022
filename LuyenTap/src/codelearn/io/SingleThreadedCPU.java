@@ -21,19 +21,33 @@ public class SingleThreadedCPU {
     }
     public int[] getOrder(int[][] tasks) {
         int n = tasks.length;
-        int[] result = new int[n];
+        List<Integer> result = new ArrayList<>();
         List<Task> taskList = new ArrayList<>();
-//        PriorityQueue<Task> queue = new PriorityQueue<>(( a, b) -> {
-//
-//        })
+        PriorityQueue<Task> queue = new PriorityQueue<>(( a, b) -> {
+            if( a.getProcessing() > b.getProcessing()) return 1;
+            if( a.getProcessing() < b.getProcessing()) return -1;
+
+            if( a.getIndex() > b.getIndex()) return 1;
+            if( a.getIndex() < b.getIndex()) return -1;
+            return 0;
+        });
+
         for (int i = 0; i < n; i++) {
             Task task = new Task(i, tasks[i][0], tasks[i][1]);
             taskList.add(task);
         }
+        taskList.stream()
+                .sorted();
+        int j = 0;
+        for (int i = 0; i < n; i++) {
+            Task taskI = taskList.get(i);
+            result.add(taskI.getIndex());
+            for (; j < n && j <= taskI.getEnqueue() + taskI.getProcessing(); j++){
 
+            }
+        }
 
-
-        return result;
+        return new int[3];
     }
 }
 
