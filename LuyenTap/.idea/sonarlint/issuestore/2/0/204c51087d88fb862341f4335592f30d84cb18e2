@@ -1,0 +1,12 @@
+
+M
+java:S3958'"2Refactor the code so this stream pipeline is used.(û´äÓıÿÿÿÿ
+T
+java:S1854"9Remove this useless assignment to local variable "queue".(±É¼Äÿÿÿÿÿ
+E
+java:S1481"*Remove this unused "queue" local variable.(±É¼Äÿÿÿÿÿ
+>	java:S108-")Either remove or fill this block of code.(é‰ÔÍ
+t
+java:S1210["YOverride "equals(Object obj)" to comply with the contract of the "compareTo(T o)" method.(¤¦ÿÿÿÿÿ
+Z
+java:S16597"DDeclare "enqueue" and all following declarations on a separate line.(…ÆÍÍ
