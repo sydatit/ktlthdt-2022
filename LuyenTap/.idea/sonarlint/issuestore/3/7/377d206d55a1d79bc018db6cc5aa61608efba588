@@ -1,0 +1,19 @@
+
+C
+java:S1121"".Extract the assignment out of this expression.(éž‚u
+D
+java:S1121#".Extract the assignment out of this expression.(‘­¤æ
+D
+java:S1121$".Extract the assignment out of this expression.(Ÿš¥ò
+K
+java:S1854	"5Remove this useless assignment to local variable "s".(ß‚ÜŠ
+<
+java:S1481	"&Remove this unused "s" local variable.(ß‚ÜŠ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ö¡õøÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(»õ¶¯
+N	java:S106"9Replace this use of System.out or System.err by a logger.(©ÓðÈ
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(÷µÊôüÿÿÿÿ
+\
+java:S11261"AReplace this if-then-else statement by a single return statement.(¹ÎºÙþÿÿÿÿ
+N
+java:S1128"1Remove this unused import 'java.math.BigInteger'.(»Çâ€8œ‰Š®Ý0
