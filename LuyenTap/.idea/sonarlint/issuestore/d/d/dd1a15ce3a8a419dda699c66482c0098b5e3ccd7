@@ -1,0 +1,20 @@
+
+^
+java:S2583""CChange this condition so that it does not always evaluate to "true"(ªØ¬ÿÿÿÿÿ
+n
+java:S1450"SRemove the "keys" field and declare it as a local variable in the relevant methods.(û²½Ñûÿÿÿÿ
+h
+java:S1450"RRemove the "map" field and declare it as a local variable in the relevant methods.(ı‘æó
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(‰Š‡…ùÿÿÿÿ
+S
+java:S1854'"8Remove this useless assignment to local variable "dirs".(üíÒôûÿÿÿÿ
+>
+java:S1172%"(Remove this unused method parameter "i".( îÈ
+D
+java:S1481'")Remove this unused "dirs" local variable.(üíÒôûÿÿÿÿ
+>	java:S108+")Either remove or fill this block of code.(ãéº¦
+C
+java:S1068"(Remove this unused "keys" private field.(û²½Ñûÿÿÿÿ
+G
+java:S11440"1Remove this unused private "resetVisited" method.(ÑÎô

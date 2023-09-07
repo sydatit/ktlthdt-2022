@@ -1,0 +1,9 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(³¹Ž½
+h
+java:S1450"RRemove the "adj" field and declare it as a local variable in the relevant methods.(Ñ€ãù
+@
+java:S1197"*Move the array designators [] to the type.(Ñ€ãù
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Çºòýÿÿÿÿÿ8çŠ°¨‰1
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Çµì…

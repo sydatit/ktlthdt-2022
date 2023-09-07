@@ -1,0 +1,9 @@
+
+o
+java:S1450"RRemove the "adj" field and declare it as a local variable in the relevant methods.(ôóÇİ8© åê 1
+U	java:S106
+"9Replace this use of System.out or System.err by a logger.(‹¾”8¬ åê 1
+G
+java:S1197"*Move the array designators [] to the type.(ôóÇİ8¬ åê 1
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8° åê 1

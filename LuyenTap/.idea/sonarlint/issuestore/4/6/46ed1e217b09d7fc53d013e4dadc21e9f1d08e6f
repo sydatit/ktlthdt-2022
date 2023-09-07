@@ -1,0 +1,6 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ8ûÔŞŸ’1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(Äô‚™8ûÔŞŸ’1
+d
+java:S1126"BReplace this if-then-else statement by a single method invocation.(¯€Á¸ûÿÿÿÿ8ıÔŞŸ’1
