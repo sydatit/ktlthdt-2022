@@ -1,0 +1,9 @@
+
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(ØÕ—©ýÿÿÿÿ8±¹À¾½1
+L	java:S106
+"+Replace this use of System.out by a logger.(óß¦‘þÿÿÿÿ8£ºÀ¾½1
+]	java:S125("<This block of commented-out lines of code should be removed.(¶ƒ¹Úþÿÿÿÿ8¥ºÀ¾½1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÌîÀ¾½1
+O
+java:S11448"-Remove this unused private "getChars" method.(¦ÿãÍùÿÿÿÿ8¦ºÀ¾½1

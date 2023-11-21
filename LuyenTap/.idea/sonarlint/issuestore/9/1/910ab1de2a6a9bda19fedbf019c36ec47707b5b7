@@ -1,0 +1,6 @@
+
+U	java:S106	"9Replace this use of System.out or System.err by a logger.(‚¥«ƒ8µøÞÙª1
+E
+java:S1659"#Declare "right" on a separate line.(Ï¶ì„ûÿÿÿÿ8§÷»Úª1
+J
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8¨÷»Úª1

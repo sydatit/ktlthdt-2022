@@ -1,0 +1,14 @@
+
+r	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰»Å‹ýÿÿÿÿ8õ±­¸­1
+r	java:S117
+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰»Å‹ýÿÿÿÿ8õ±­¸­1
+_
+java:S2259&"BA "NullPointerException" could be thrown; "null" is nullable here.(•…þ§8¡²­¸­1
+^
+java:S3518"AMake sure "curLength" can't be zero before doing this modulation.(¢‹Íð8¢²­¸­1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¯ÂË°8¤²­¸­1
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ8¦²­¸­1
+N
+java:S1144)"1Remove this unused private "decodeString" method.(ÒÙ®¯8¦²­¸­1

@@ -1,0 +1,5 @@
+
+L	java:S106"+Replace this use of System.out by a logger.(Šğö¤úÿÿÿÿ8ÎƒÛ½1
+X	java:S125"<This block of commented-out lines of code should be removed.(ïùû8‘ÎƒÛ½1
+T
+java:S1144!"2Remove this unused private "findMinOfPair" method.(ññßúÿÿÿÿ8‘ÎƒÛ½1
