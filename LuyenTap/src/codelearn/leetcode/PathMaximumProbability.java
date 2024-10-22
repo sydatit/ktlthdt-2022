@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 public class PathMaximumProbability {
-    class Node{
-        int index;
-        double prob;
-        Node(int index, double prob){
-            this.index = index;
-            this.prob = prob;
-        }
-    }
+//    class Node{
+//        int index;
+//        double prob;
+//        Node(int index, double prob){
+//            this.index = index;
+//            this.prob = prob;
+//        }
+//    }
     public static void main(String[] args) {
         PathMaximumProbability pathMaximumProbability = new PathMaximumProbability();
         int n = 3;
@@ -42,17 +42,17 @@ public class PathMaximumProbability {
         prob[start] = 1.0;
 
         boolean[] visited = new boolean[n];
-        PriorityQueue<Node> queue = new PriorityQueue<>((a, b) -> Double.compare(b.prob, a.prob));
-        queue.add(new Node(start, 1.0));
+        PriorityQueue<double[]> queue = new PriorityQueue<>((a, b) -> Double.compare(b[1], a[1]));
+        queue.add(new double[]{start, 1.0});
         while (!queue.isEmpty()) {
-            Node cur = queue.poll();
-            if( visited[cur.index])
+            double[] cur = queue.poll();
+            if( visited[(int)cur[0]])
                 continue;
-            visited[cur.index] = true;
-            for (double[] next : adj.get(cur.index)) {
-                if( !visited[(int)next[0]] && prob[(int)next[0]] < cur.prob * next[1]){
-                    prob[(int)next[0]] = cur.prob * next[1];
-                    queue.add(new Node((int)next[0], prob[(int)next[0]]));
+            visited[(int)cur[0]] = true;
+            for (double[] next : adj.get((int)cur[0])) {
+                if( !visited[(int)next[0]] && prob[(int)next[0]] < cur[1] * next[1]){
+                    prob[(int)next[0]] = cur[1] * next[1];
+                    queue.add(new double[]{next[0], prob[(int)next[0]]});
                 }
             }
         }
